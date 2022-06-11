@@ -63,7 +63,7 @@ p{
 
 .add-button, .sub-button {
     height: 4rem;
-    width: 4rem;
+    width: 5rem;
 }
 
 .incrementor {
@@ -78,12 +78,13 @@ p{
     border-radius: 3px;
     border: 1px solid black;
     height: 4rem;
-    width: 7rem;
+    width: 5rem;
     font-size: 1.5rem;
 }
 
 table{
     margin-bottom: 1rem;
+    padding: 10px;
 }
 
 thead tr td{
@@ -112,16 +113,11 @@ button {
       font-size: 16px;
       border: 2px solid #444;
       border-radius: 4px;
-      width: 20rem;
       margin: 5px;
   }
   
   .radio-toolbar label:hover {
     background-color: #dfd;
-  }
-  
-  .radio-toolbar input[type="radio"]:focus + label {
-      border: 2px dashed #444;
   }
   
   .radio-toolbar input[type="radio"]:checked + label {
