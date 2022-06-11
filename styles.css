@@ -1,0 +1,87 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    text-align: center;
+    margin: 0;
+}
+
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+.center {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+img {
+    max-width: 150px;
+    vertical-align: middle;
+    margin: 10px;
+}
+body{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+header {
+    background-color: darkblue;
+    color: whitesmoke;
+    font-size: 1.4rem;
+    text-align: center;
+}
+
+h1 {
+    font-size: 1.4rem;
+    padding: 5px;
+}
+
+footer {
+    background-color: darkblue;
+    color: whitesmoke;
+    margin-top: auto;
+}
+
+.container {
+    background-color: whitesmoke;
+}
+
+p{
+    padding: 20px;
+}
+
+.add-button, .sub-button {
+    height: 2.5rem;
+    width: 2.5rem;
+}
+
+.incrementor {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.incrementor input{
+    font-size: 18px;
+    padding: 8px;
+    border-radius: 3px;
+    border: 1px solid black;
+}
+
+table{
+    margin-bottom: 1rem;
+}
+
+button {
+    border: 1px solid black;
+}
