@@ -61,8 +61,8 @@ p{
 }
 
 .add-button, .sub-button {
-    height: 2.5rem;
-    width: 2.5rem;
+    height: 4rem;
+    width: 4rem;
 }
 
 .incrementor {
@@ -76,6 +76,7 @@ p{
     padding: 8px;
     border-radius: 3px;
     border: 1px solid black;
+    height: 4rem;
 }
 
 table{
