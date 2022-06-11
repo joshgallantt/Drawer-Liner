@@ -27,7 +27,8 @@ input[type=number] {
 img {
     max-width: 150px;
     vertical-align: middle;
-    margin: 10px;
+    margin: 1rem;
+    padding-top: 1rem;
 }
 body{
     min-height: 100vh;
@@ -43,22 +44,25 @@ header {
 }
 
 h1 {
-    font-size: 1.4rem;
-    padding: 5px;
+    font-size: 1.8rem;
+    margin-bottom: 1.7rem;
 }
 
 footer {
     background-color: darkblue;
     color: whitesmoke;
     margin-top: auto;
+    font-size: 1.2rem;
+    padding: 1rem;
 }
 
 .container {
     background-color: whitesmoke;
 }
 
-p{
-    padding: 20px;
+#intro {
+    font-size: 22px;
+    padding: 1rem;
 }
 
 .add-button, .sub-button {
