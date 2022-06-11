@@ -79,10 +79,19 @@ p{
     border: 1px solid black;
     height: 4rem;
     width: 7rem;
+    font-size: 1.5rem;
 }
 
 table{
     margin-bottom: 1rem;
+}
+
+thead tr td{
+    font-weight: bold;
+}
+
+.size-label{
+    font-size: 1.5rem;
 }
 
 button {

@@ -17,118 +17,113 @@
 <body>
     <header class="header">
         <img id="logo" src="ikea.png" alt="a logo" />
-        <div class="header-text"> <h1>Drawer Liner Calculator</h1> </div>
+        <div class="header-text">
+            <h1>Drawer Liner Calculator</h1>
+        </div>
         <div id="spacer"></div>
     </header>
     <main>
-            <p>This calculator tells you how how many rolls of material to buy to line your kitchen drawers!<br>Select
-                the amount of drawers your kitchen has, and what material you want to use.</p>
-                <table class="table center">
-                    <thead>
-                        <tr>
-                            <td>Drawer Size<br>(inches)</td>
-                            <td>Quantity</td>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td class="size-label">12</td>
-                            <td>
-                                <div id="field1" class="incrementor">
-                                    <button type="button" class="sub-button">-</button>
-                                    <input type="number" id="12" name="15" min="0" max="99" size="4" pattern="[0-9]+"
-                                        value="0">
-                                    <button type="button" class="add-button">+</button>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="size-label">15</td>
-                            <td>
-                                <div id="field2" class="incrementor">
-                                    <button type="button" class="sub-button">-</button>
-                                    <input type="number" id="15" name="15" min="0" max="99" size="4" pattern="[0-9]+"
-                                        value="0">
-                                    <button type="button" class="add-button">+</button>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="size-label">18</td>
-                            <td>
-                                <div id="field3" class="incrementor">
-                                    <button type="button" class="sub-button">-</button>
-                                    <input type="number" id="18" name="15" min="0" max="99" size="4" pattern="[0-9]+"
-                                        value="0">
-                                    <button type="button" class="add-button">+</button>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="size-label">21</td>
-                            <td>
-                                <div id="field4" class="incrementor">
-                                    <button type="button" class="sub-button">-</button>
-                                    <input type="number" id="21" name="15" min="0" max="99" size="4" pattern="[0-9]+"
-                                        value="0">
-                                    <button type="button" class="add-button">+</button>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="size-label">24</td>
-                            <td>
-                                <div id="field5" class="incrementor">
-                                    <button type="button" class="sub-button">-</button>
-                                    <input type="number" id="24" name="15" min="0" max="99" size="4" pattern="[0-9]+"
-                                        value="0">
-                                    <button type="button" class="add-button">+</button>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="size-label">30</td>
-                            <td>
-                                <div id="field6" class="incrementor">
-                                    <button type="button" class="sub-button">-</button>
-                                    <input type="number" id="30" name="15" min="0" max="99" size="4" pattern="[0-9]+"
-                                        value="0">
-                                    <button type="button" class="add-button">+</button>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="size-label">36</td>
-                            <td>
-                                <div id="field7" class="incrementor">
-                                    <button type="button" class="sub-button">-</button>
-                                    <input type="number" id="36" name="15" min="0" max="99" size="4" pattern="[0-9]+"
-                                        value="0">
-                                    <button type="button" class="add-button">+</button>
-                                </div>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
-            <div class="radio-toolbar">
-                <h3>Select Liner Product:</h3>
-                <input type="radio" id="variera" name="liner" value="passarp" checked>
-                <label for="variera">VARIERA 800.128.53<br>(59" clear roll)</label>
-                <br>
-                <input type="radio" id="passarp" name="liner" value="variera">
-                <label for="passarp">PASSARP 103.200.01<br>(31" fabric mat)</label>
-            </div>
-            <div class="printer-toolbar">
-                <h3>Print to a new window? </h3>
-                <input type="radio" id="yes" name="printer" value="true" checked>
-                <label for="yes">Yes</label>
-                <input type="radio" id="no" name="printer" value="false">
-                <label for="no">No</label>
-            </div>
+        <p>This calculator tells you how how many rolls of material to buy to line your kitchen drawers!<br><br>Select
+            how many of each drawer your kitchen has, then select the material option:</p>
+        <table class="table center">
+            <thead>
+                <tr>
+                    <td>Drawer Size<br>(inches)</td>
+                    <td>Quantity to Line</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="size-label">12</td>
+                    <td>
+                        <div id="field1" class="incrementor">
+                            <button type="button" class="sub-button">-</button>
+                            <input type="number" id="12" name="15" min="0" max="99" size="4" pattern="[0-9]+" value="0">
+                            <button type="button" class="add-button">+</button>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="size-label">15</td>
+                    <td>
+                        <div id="field2" class="incrementor">
+                            <button type="button" class="sub-button">-</button>
+                            <input type="number" id="15" name="15" min="0" max="99" size="4" pattern="[0-9]+" value="0">
+                            <button type="button" class="add-button">+</button>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="size-label">18</td>
+                    <td>
+                        <div id="field3" class="incrementor">
+                            <button type="button" class="sub-button">-</button>
+                            <input type="number" id="18" name="15" min="0" max="99" size="4" pattern="[0-9]+" value="0">
+                            <button type="button" class="add-button">+</button>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="size-label">21</td>
+                    <td>
+                        <div id="field4" class="incrementor">
+                            <button type="button" class="sub-button">-</button>
+                            <input type="number" id="21" name="15" min="0" max="99" size="4" pattern="[0-9]+" value="0">
+                            <button type="button" class="add-button">+</button>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="size-label">24</td>
+                    <td>
+                        <div id="field5" class="incrementor">
+                            <button type="button" class="sub-button">-</button>
+                            <input type="number" id="24" name="15" min="0" max="99" size="4" pattern="[0-9]+" value="0">
+                            <button type="button" class="add-button">+</button>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="size-label">30</td>
+                    <td>
+                        <div id="field6" class="incrementor">
+                            <button type="button" class="sub-button">-</button>
+                            <input type="number" id="30" name="15" min="0" max="99" size="4" pattern="[0-9]+" value="0">
+                            <button type="button" class="add-button">+</button>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="size-label">36</td>
+                    <td>
+                        <div id="field7" class="incrementor">
+                            <button type="button" class="sub-button">-</button>
+                            <input type="number" id="36" name="15" min="0" max="99" size="4" pattern="[0-9]+" value="0">
+                            <button type="button" class="add-button">+</button>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="radio-toolbar">
+            <h3>Select Liner Product:</h3>
+            <input type="radio" id="variera" name="liner" value="passarp" checked>
+            <label for="variera">VARIERA 800.128.53<br>(59" clear roll)</label>
             <br>
-            <div class="calculate-button">
-                <button>Calculate</button>
-            </div>
+            <input type="radio" id="passarp" name="liner" value="variera">
+            <label for="passarp">PASSARP 103.200.01<br>(31" fabric mat)</label>
+        </div>
+        <div class="printer-toolbar">
+            <h3>Print to a new window? </h3>
+            <input type="radio" id="yes" name="printer" value="true" checked>
+            <label for="yes">Yes</label>
+            <input type="radio" id="no" name="printer" value="false">
+            <label for="no">No</label>
+        </div>
+        <br>
+        <div class="calculate-button">
+            <button>Calculate</button>
+        </div>
     </main>
     <footer>
         <p>
