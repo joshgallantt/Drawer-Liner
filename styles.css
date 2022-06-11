@@ -64,7 +64,10 @@ p{
 .add-button, .sub-button {
     font-size: 1.5rem;
     height: 4rem;
-    width: 5rem;
+    width: 4rem;
+    border-radius: 50%;
+    border: 0;
+    margin: 1rem;
 }
 
 .incrementor {
@@ -105,7 +108,7 @@ thead tr td{
   .radio-toolbar label {
       display: inline-block;
       background-color: #ddd;
-      padding: 10px 20px;
+      padding: 20px 40px;
       font-family: sans-serif, Arial;
       font-size: 16px;
       border: 1px solid #999;
