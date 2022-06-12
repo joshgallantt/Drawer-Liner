@@ -36,6 +36,7 @@ button:focus {
 body {
     background-color: white;
     max-width: 100vw;
+    touch-action: manipulation;
 }
 
 header {
