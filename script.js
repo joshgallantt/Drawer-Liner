@@ -7,22 +7,36 @@ $(document).ready(function () {
         if ($(this).next().val() > 0) $(this).next().val(+$(this).next().val() - 1);
     });
 
-    $('.calculate').click(calculate);
-    // $('.usedCountet').click(usedCountet);
-
     $('input').bind('keypress', function (e) {
         return !(e.which != 8 && e.which != 0 &&
-                (e.which < 48 || e.which > 57) && e.which != 46);
+            (e.which < 48 || e.which > 57) && e.which != 46);
     });
 
     $('.incrementor input').click(function () {
         $(this).select();
     });
 
+    $('.calculate').click(calculate);
+
+    $('.reset').click(function () {
+        $(".drawer").val('0');
+        $("#diagram").empty();
+    });
+
+
 
 });
 
 function calculate() {
+
+    var sum = 0;
+    $('.drawer').each(function(){
+        sum += parseFloat(this.value);
+    });
+    
+    if (sum == 0) return
+
+    $("#diagram").empty();
 
     //corresponding inner dimensions of the drawers
     const trueLength12 = 7;
@@ -85,5 +99,24 @@ function calculate() {
         }
     }
 
-    console.log(cutsList)
+    $(".diagram").append("<h3>Cutting Diagram:<h3>");
+
+
+    for (let i = 0; i < cutsList.length; i++) {
+        let cutsUsed = 0;
+        const element = cutsList[i];
+        for (let j = 0; j < cutsList[i].length; j++) {
+            const element = cutsList[i][j];
+            $(".diagram").append('<div class="segment" style="width: ' + Math.floor(((element / chosenMaterial) * 100)) + '%;">' + element + '&quot;  ' + '</div>')
+            cutsUsed += element
+        }
+        if (cutsUsed != chosenMaterial) {
+            $(".diagram").append('<div class="segment" style="background-color: whitesmoke; width: ' + Math.floor(((((chosenMaterial - cutsUsed)) / chosenMaterial) * 100)) + '%;">' + '&nbsp' + '</div>')
+        }
+        $(".diagram").append(`<br>`)
+    }
+
+
+
 };
+
