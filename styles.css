@@ -219,13 +219,15 @@ thead tr td {
     position: relative;
     border: 0;
     text-align: center;
+    padding: 0;
 }
 
+@media (hover: hover) {
+    .button:hover {
+        -webkit-appearance: none;
+        filter: brightness(0.9);
 
-.button:hover {
-    -webkit-appearance: none;
-    filter: brightness(0.9);
-
+    }
 }
 
 .button:active {
