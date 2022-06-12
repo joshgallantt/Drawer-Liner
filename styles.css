@@ -13,6 +13,7 @@
     -ms-user-select: none;
     user-select: none;
     text-align: center;
+    -webkit-appearance: none;
 
 }
 
@@ -49,7 +50,9 @@ header {
     max-width: 12rem;
     vertical-align: middle;
     padding: 1rem;
-}
+    filter: drop-shadow(0 0 0.75rem rgb(27, 109, 233));}
+
+
 
 
 h1 {
