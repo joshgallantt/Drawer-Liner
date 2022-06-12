@@ -110,7 +110,7 @@ function calculate() {
             $(".diagram").append('<div class="segment" style="width: ' + Math.floor(((element / chosenMaterial) * 100)) + '%;">' + element + '&quot;  ' + '</div>')
             cutsUsed += element
         }
-        if (cutsUsed != chosenMaterial) {
+        if (cutsUsed != chosenMaterial && Math.floor((((chosenMaterial - cutsUsed)) / chosenMaterial) * 100) > 0 ){
             $(".diagram").append('<div class="segment" style="background-color: whitesmoke; width: ' + Math.floor(((((chosenMaterial - cutsUsed)) / chosenMaterial) * 100)) + '%;">' + '&nbsp' + '</div>')
         }
         $(".diagram").append(`<br>`)
