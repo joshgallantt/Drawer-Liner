@@ -6,7 +6,11 @@
     margin: 0px;
     font-family: Arial, Helvetica, sans-serif;
     touch-action: manipulation;
-    user-select: none;
+    user-select: none; /* supported by Chrome and Opera */
+   -webkit-user-select: none; /* Safari */
+   -khtml-user-select: none; /* Konqueror HTML */
+   -moz-user-select: none; /* Firefox */
+   -ms-user-select: none; /* Internet Explorer/Edge */
     text-align: center;
 
 }
@@ -119,7 +123,11 @@ thead tr td{
     border: 1px solid lightgray;
     margin: 0.7rem;
     max-width: 60px;
-    user-select: all;
+    user-select: all; /* supported by Chrome and Opera */
+   -webkit-user-select: text;/* Safari */
+   -khtml-user-select: text; /* Konqueror HTML */
+   -moz-user-select: text; /* Firefox */
+   -ms-user-select: text; /* Internet Explorer/Edge */
 }
 
 
