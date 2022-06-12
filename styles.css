@@ -1,291 +1,279 @@
 *,
 *::before,
 *::after {
-    box-sizing: border-box;
-    text-align: center;
-    margin: 0px;
-    font-family: Arial, Helvetica, sans-serif;
-    touch-action: manipulation;
-    user-select: none;
-    /* supported by Chrome and Opera */
-    -webkit-user-select: none;
-    /* Safari */
-    -khtml-user-select: none;
-    /* Konqueror HTML */
-    -moz-user-select: none;
-    /* Firefox */
-    -ms-user-select: none;
-    /* Internet Explorer/Edge */
-    /* border: 1px solid pink; */
-
+  box-sizing: border-box;
+  text-align: center;
+  margin: 0px;
+  font-family: Arial, Helvetica, sans-serif;
+  touch-action: manipulation;
+  user-select: none;
+  /* supported by Chrome and Opera */
+  -webkit-user-select: none;
+  /* Safari */
+  -khtml-user-select: none;
+  /* Konqueror HTML */
+  -moz-user-select: none;
+  /* Firefox */
+  -ms-user-select: none;
+  /* Internet Explorer/Edge */
+  /* border: 1px solid pink; */
 }
 
 /* Chrome, Safari, Edge, Opera */
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
-    -webkit-appearance: none;
+  -webkit-appearance: none;
 }
 
 /* Firefox */
-input[type=number] {
-    -moz-appearance: textfield;
+input[type="number"] {
+  -moz-appearance: textfield;
 }
 
 input:focus,
 select:focus,
 textarea:focus,
 button:focus {
-    outline: none;
+  outline: none;
 }
 
 body {
-    background-color: white;
-    max-width: 100vw;
-    touch-action: manipulation;
+  background-color: white;
+  max-width: 100vw;
+  touch-action: manipulation;
 }
 
 header {
-    background-color: darkblue;
-    color: whitesmoke;
-    font-size: 1.4rem;
-    padding: 1rem;
+  background-color: darkblue;
+  color: whitesmoke;
+  font-size: 1.4rem;
+  padding: 1rem;
 }
 
 .header img {
-    max-width: 12rem;
-    vertical-align: middle;
-    padding: 1rem;
+  max-width: 12rem;
+  vertical-align: middle;
+  padding: 1rem;
 }
 
-
 h1 {
-    font-size: 1.8rem;
-    padding: 0.5rem;
+  font-size: 1.8rem;
+  padding: 0.5rem;
+}
+
+h2 {
+  font-size: 1.4rem;
 }
 
 h3 {
-    font-size: 1.2rem;
+  font-size: 1.2rem;
 }
 
-
-
 #intro {
-    padding: 1.5rem;
-    font-size: 1.2rem;
-    background-color: white;
+  padding: 1.5rem;
+  font-size: 1.2rem;
+  background-color: white;
 }
 
 table {
-    margin-left: auto;
-    margin-right: auto;
-    width: 40px;
-    padding: 1rem;
-    border-spacing: 0;
-    border-collapse: collapse;
-    border-style: hidden;
-    margin-bottom: 1.4rem;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40px;
+  padding: 1rem;
+  border-spacing: 0;
+  border-collapse: collapse;
+  border-style: hidden;
+  margin-bottom: 1.4rem;
 }
 
 table td {
-    font-weight: bold;
-    border: 1px solid lightgray;
-    padding: 0.4rem;
-
+  font-weight: bold;
+  border-bottom: 1px solid lightgray;
+  padding: 0.4rem;
 }
 
 thead tr td {
-    border-bottom: 1px solid black;
-
+  border-bottom: 1px solid black;
 }
-
-
 
 /* text column */
 .table-size-label {
-    font-size: 1.3rem;
+  font-size: 1.3rem;
 }
 
 /* incrementor table row elements */
 .incrementor {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /* input number field */
 .incrementor input {
-    font-size: 18px;
-    border-radius: 10px;
-    padding: 0.6rem 0rem;
-    font-size: 1.5rem;
-    border: 1px solid lightgray;
-    margin: 0.7rem;
-    max-width: 60px;
-    user-select: all;
-    /* supported by Chrome and Opera */
-    -webkit-user-select: text;
-    /* Safari */
-    -khtml-user-select: text;
-    /* Konqueror HTML */
-    -moz-user-select: text;
-    /* Firefox */
-    -ms-user-select: text;
-    /* Internet Explorer/Edge */
+  font-size: 18px;
+  border-radius: 10px;
+  padding: 0.6rem 0rem;
+  font-size: 1.5rem;
+  border: 1px solid lightgray;
+  margin: 0.7rem;
+  max-width: 60px;
+  user-select: all;
+  /* supported by Chrome and Opera */
+  -webkit-user-select: text;
+  /* Safari */
+  -khtml-user-select: text;
+  /* Konqueror HTML */
+  -moz-user-select: text;
+  /* Firefox */
+  -ms-user-select: text;
+  /* Internet Explorer/Edge */
 }
-
 
 /* Removes standard ui toggle buttons */
 .radio-toolbar input[type="radio"] {
-    opacity: 0;
-    position: fixed;
-    width: 0;
+  opacity: 0;
+  position: fixed;
+  width: 0;
 }
 
-input[type="radio"]{
-    position: fixed;
-    opacity: 0;
-    pointer-events: none;;
+input[type="radio"] {
+  position: fixed;
+  opacity: 0;
+  pointer-events: none;
 }
 
-
-.select{
-    padding: 1rem;
+.select {
+  padding: 1rem;
 }
 
 /* radio buttons unchecked */
-.select label{
-    display: inline-block;
-    background-color: #e9e9ed;
-    padding: 1rem;
-    font-size: 1.2rem;
-    border-radius: 0.5rem;
-    color: slategray;
-    margin: 0.5rem 0.4rem;
+.select label {
+  display: inline-block;
+  background-color: #e9e9ed;
+  padding: 1rem;
+  font-size: 1.2rem;
+  border-radius: 0.5rem;
+  color: slategray;
+  margin: 0.5rem 0.4rem;
 }
 
 @media (hover: hover) {
-    .select label:hover {
-        -webkit-appearance: none;
-        filter: brightness(0.9);
-
-    }
-}
-
-.select input[type="radio"]:checked+label {
+  .select label:hover {
+    -webkit-appearance: none;
     filter: brightness(0.9);
-    background-color: darkblue;
-    color: white;
   }
-
-
-
-
-.material label{
-    width: 15rem;
 }
 
+.select input[type="radio"]:checked + label {
+  filter: brightness(0.9);
+  background-color: darkblue;
+  color: white;
+}
+
+.material label {
+  width: 15rem;
+}
 
 .green {
-    background-color: #2edd2e;
-
+  background-color: #2edd2e;
 }
 
 .red {
-    background-color: #ff3333;
-
+  background-color: #ff3333;
 }
 
 .button {
-    display: inline-block;
-    font-size: 18px;
-    border-radius: 0.5rem;
-    width: 3rem;
-    height: 3rem;
-    font-size: 2rem;
-    font-family: monospace;
-    font-weight: bold;
-    color: #FFFFFF;
-    box-shadow: inset 0 -0.5em 0 -0.35em rgba(0, 0, 0, 0.17);
-    position: relative;
-    border: 0;
-    text-align: center;
-    padding: 0;
+  display: inline-block;
+  font-size: 18px;
+  border-radius: 0.5rem;
+  width: 3rem;
+  height: 3rem;
+  font-size: 2rem;
+  font-family: monospace;
+  font-weight: bold;
+  color: #ffffff;
+  box-shadow: inset 0 -0.5em 0 -0.35em rgba(0, 0, 0, 0.17);
+  position: relative;
+  border: 0;
+  text-align: center;
+  padding: 0;
 }
 
 @media (hover: hover) {
-    .button:hover {
-        -webkit-appearance: none;
-        filter: brightness(0.9);
-
-    }
+  .button:hover {
+    -webkit-appearance: none;
+    filter: brightness(0.9);
+  }
 }
 
 .button:active {
-    top: 3px;
-    margin: 0.11rem;
-    width: 2.8rem;
-    height: 2.8rem;
-    font-size: 1.8rem;
-    filter: brightness(0.8);
-    box-shadow: none;
+  top: 3px;
+  margin: 0.11rem;
+  width: 2.8rem;
+  height: 2.8rem;
+  font-size: 1.8rem;
+  filter: brightness(0.8);
+  box-shadow: none;
 }
 
 .control-button {
-    display: inline-block;
-    margin: 1rem;
-    font-size: 18px;
-    border-radius: 0.5rem;
-    width: 15rem;
-    height: 3rem;
-    font-size: 2rem;
-    font-family: monospace;
-    font-weight: bold;
-    color: #FFFFFF;
-    box-shadow: inset 0 -0.5em 0 -0.35em rgba(0, 0, 0, 0.17);
-    position: relative;
-    border: 0;
-    text-align: center;
-    padding: 0;
+  display: inline-block;
+  margin: 1rem;
+  font-size: 18px;
+  border-radius: 0.5rem;
+  width: 15rem;
+  height: 3rem;
+  font-size: 2rem;
+  font-family: monospace;
+  font-weight: bold;
+  color: #ffffff;
+  box-shadow: inset 0 -0.5em 0 -0.35em rgba(0, 0, 0, 0.17);
+  position: relative;
+  border: 0;
+  text-align: center;
+  padding: 0;
 }
 
 @media (hover: hover) {
-    .control-button:hover {
-        -webkit-appearance: none;
-        filter: brightness(0.92);
-
-    }
+  .control-button:hover {
+    -webkit-appearance: none;
+    filter: brightness(0.92);
+  }
 }
 
 .control-button:active {
-    top:3px;
-    width: 14.5rem;
-    height: 3rem;
-    font-size: 1.85rem;
-    filter: brightness(0.8);
-    box-shadow: none;
+  top: 3px;
+  width: 14.5rem;
+  height: 3rem;
+  font-size: 1.85rem;
+  filter: brightness(0.8);
+  box-shadow: none;
 }
 
 footer {
-    background-color: darkblue;
-    color: whitesmoke;
-    font-size: 1.2rem;
-    margin-top: 2rem;
-    padding: 1.5rem;
+  background-color: darkblue;
+  color: whitesmoke;
+  font-size: 0.8rem;
+  margin-top: 2rem;
+  padding: 1.5rem;
 }
 
-.diagram{
-    width: 16rem;
-    margin: auto;
-    text-align: left;
-
+.diagram {
+  /* border: 1px solid whitesmoke; */
+  padding: 0.4rem;
+  margin-top: 0.8rem;
+  margin-bottom: 0.8rem;
+  width: 16rem;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
 }
 
-.diagram div{
-    background-color: lightgrey;
-    border: 1px dashed black;
-    display: inline-block;
-    margin-top: 1rem;
-    padding: 0.1rem;
-    font-size: 0.8rem;
+.diagram div {
+  background-color: lightgrey;
+  border: 1px dashed black;
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.1rem;
+  font-size: 0.8rem;
 }

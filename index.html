@@ -1,152 +1,216 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1,user-scalable=0" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1,user-scalable=0"
+    />
     <title>IKEA Drawer Liner Calculator</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="script.js"></script>
-</head>
+  </head>
 
-<body ontouchstart="">
-
+  <body ontouchstart="">
     <header class="header">
-        <img id="logo" src="ikea.png" alt="IKEA Logo" />
-        <h1>Kitchen Drawer Liner Calculator</h1>
-        <div id="spacer"></div>
+      <img id="logo" src="ikea.png" alt="IKEA Logo" />
+      <h1>Kitchen Drawer Liner Calculator</h1>
+      <div id="spacer"></div>
     </header>
 
     <main>
+      <h2 id="intro">
+        Calculates the amount of liner you need and how to cut it.
+      </h2>
 
-        <h2 id="intro">Finds out how much drawer liner material you need and how to cut it so you can minimize waste!
-        </h2>
+      <table class="table">
+        <thead>
+          <tr>
+            <td>
+              <h3>Drawer Size</h3>
+            </td>
+            <td>
+              <h3># of Drawers</h3>
+            </td>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="table-size-label">12"</td>
+            <td>
+              <div class="incrementor">
+                <button class="sub-button red button" type="button">
+                  <span>-</span>
+                </button>
+                <input
+                  class="drawer"
+                  type="number"
+                  id="12"
+                  name="12"
+                  min="0"
+                  size="4"
+                  pattern="[0-9]+"
+                  value="0"
+                />
+                <button class="add-button green button" type="button">
+                  <span>+</span>
+                </button>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td class="table-size-label">15"</td>
+            <td>
+              <div class="incrementor">
+                <button class="sub-button red button" type="button">
+                  <span>-</span>
+                </button>
+                <input
+                  class="drawer"
+                  type="number"
+                  id="15"
+                  name="15"
+                  min="0"
+                  size="4"
+                  pattern="[0-9]+"
+                  value="0"
+                />
+                <button class="add-button green button" type="button">
+                  <span>+</span>
+                </button>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td class="table-size-label">18"</td>
+            <td>
+              <div class="incrementor">
+                <button class="sub-button red button" type="button">
+                  <span>-</span>
+                </button>
+                <input
+                  class="drawer"
+                  type="number"
+                  id="18"
+                  name="18"
+                  min="0"
+                  size="4"
+                  pattern="[0-9]+"
+                  value="0"
+                />
+                <button class="add-button green button" type="button">
+                  <span>+</span>
+                </button>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td class="table-size-label">21"</td>
+            <td>
+              <div class="incrementor">
+                <button class="sub-button red button" type="button">
+                  <span>-</span>
+                </button>
+                <input
+                  class="drawer"
+                  type="number"
+                  id="21"
+                  name="21"
+                  min="0"
+                  size="4"
+                  pattern="[0-9]+"
+                  value="0"
+                />
+                <button class="add-button green button" type="button">
+                  <span>+</span>
+                </button>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td class="table-size-label">24"</td>
+            <td>
+              <div class="incrementor">
+                <button class="sub-button red button" type="button">
+                  <span>-</span>
+                </button>
+                <input
+                  class="drawer"
+                  type="number"
+                  id="24"
+                  name="24"
+                  min="0"
+                  size="4"
+                  pattern="[0-9]+"
+                  value="0"
+                />
+                <button class="add-button green button" type="button">
+                  <span>+</span>
+                </button>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td class="table-size-label">30"</td>
+            <td>
+              <div class="incrementor">
+                <button class="sub-button red button" type="button">
+                  <span>-</span>
+                </button>
+                <input
+                  class="drawer"
+                  type="number"
+                  id="30"
+                  name="30"
+                  min="0"
+                  size="4"
+                  pattern="[0-9]+"
+                  value="0"
+                />
+                <button class="add-button green button" type="button">
+                  <span>+</span>
+                </button>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td class="table-size-label">36"</td>
+            <td>
+              <div class="incrementor">
+                <button class="sub-button red button" type="button">
+                  <span>-</span>
+                </button>
+                <input
+                  class="drawer"
+                  type="number"
+                  id="36"
+                  name="36"
+                  min="0"
+                  size="4"
+                  pattern="[0-9]+"
+                  value="0"
+                />
+                <button class="add-button green button" type="button">
+                  <span>+</span>
+                </button>
+              </div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
 
-        <table class="table">
-            <thead>
-                <tr>
-                    <td>
-                        <h3>Drawer Size</h3>
-                    </td>
-                    <td>
-                        <h3># of Drawers</h3>
-                    </td>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td class="table-size-label">12"</td>
-                    <td>
-                        <div class="incrementor">
-                            <button class="sub-button red button" type="button">
-                                <span>-</span>
-                            </button>
-                            <input class="drawer" type="number" id="12" name="12" min="0" size="4" pattern="[0-9]+" value="0">
-                            <button class="add-button green button" type="button">
-                                <span>+</span>
-                            </button>
-                        </div>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="table-size-label">15"</td>
-                    <td>
-                        <div class="incrementor">
-                            <button class="sub-button red button" type="button">
-                                <span>-</span>
-                            </button>
-                            <input class="drawer" type="number" id="15" name="15" min="0" size="4" pattern="[0-9]+" value="0">
-                            <button class="add-button green button" type="button">
-                                <span>+</span>
-                            </button>
-                        </div>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="table-size-label">18"</td>
-                    <td>
-                        <div class="incrementor">
-                            <button class="sub-button red button" type="button">
-                                <span>-</span>
-                            </button>
-                            <input class="drawer" type="number" id="18" name="18" min="0" size="4" pattern="[0-9]+" value="0">
-                            <button class="add-button green button" type="button">
-                                <span>+</span>
-                            </button>
-                        </div>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="table-size-label">21"</td>
-                    <td>
-                        <div class="incrementor">
-                            <button class="sub-button red button" type="button">
-                                <span>-</span>
-                            </button>
-                            <input class="drawer" type="number" id="21" name="21" min="0" size="4" pattern="[0-9]+" value="0">
-                            <button class="add-button green button" type="button">
-                                <span>+</span>
-                            </button>
-                        </div>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="table-size-label">24"</td>
-                    <td>
-                        <div class="incrementor">
-                            <button class="sub-button red button" type="button">
-                                <span>-</span>
-                            </button>
-                            <input class="drawer" type="number" id="24" name="24" min="0" size="4" pattern="[0-9]+" value="0">
-                            <button class="add-button green button" type="button">
-                                <span>+</span>
-                            </button>
-                        </div>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="table-size-label">30"</td>
-                    <td>
-                        <div class="incrementor">
-                            <button class="sub-button red button" type="button">
-                                <span>-</span>
-                            </button>
-                            <input class="drawer" type="number" id="30" name="30" min="0" size="4" pattern="[0-9]+" value="0">
-                            <button class="add-button green button" type="button">
-                                <span>+</span>
-                            </button>
-                        </div>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="table-size-label">36"</td>
-                    <td>
-                        <div class="incrementor">
-                            <button class="sub-button red button" type="button">
-                                <span>-</span>
-                            </button>
-                            <input class="drawer" type="number" id="36" name="36" min="0" size="4" pattern="[0-9]+" value="0">
-                            <button class="add-button green button" type="button">
-                                <span>+</span>
-                            </button>
-                        </div>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
-
-        <div class="select material">
-            <h2>Select the liner material:</h2>
-            <input type="radio" id="variera" name="liner" value="59" checked>
-            <label for="variera">VARIERA 800.128.53<br>(59" clear roll)</label>
-            <br>
-            <input type="radio" id="passarp" name="liner" value="31">
-            <label for="passarp">PASSARP 103.200.01<br>(31" fabric mat)</label>
-        </div>
-
-        <!-- <div class="select print">
+      <div class="select material">
+        <h2>Select the liner material:</h2>
+        <input type="radio" id="variera" name="liner" value="59" checked />
+        <label for="variera">VARIERA 800.128.53<br />(59" clear roll)</label>
+        <br />
+        <input type="radio" id="passarp" name="liner" value="31" />
+        <label for="passarp">PASSARP 103.200.01<br />(31" fabric mat)</label>
+      </div>
+      <div id="diagram" class="diagram"></div>
+      <!-- <div class="select print">
             <h2>Print to a new window? </h2>
             <input type="radio" id="yes" name="printer" value="true" checked>
             <label for="yes">Yes</label>
@@ -154,33 +218,28 @@
             <label for="no">No</label>
         </div> -->
 
-        <button class="calculate control-button green" type="button">
-            <span>Calculate</span>
-        </button>
-        <br>
-        <button class="reset control-button red" type="button">
-            <span>Reset</span>
-        </button>
-
-        <div id="diagram" class="diagram">
-
-        </div>
-
+      <button class="calculate control-button green" type="button">
+        <span>Calculate</span>
+      </button>
+      <br />
+      <button class="reset control-button red" type="button">
+        <span>Reset</span>
+      </button>
     </main>
 
-
     <footer>
-        <p id="footer-text">
-            This site is not endorsed by nor affiliated with IKEA or any of its parents and/or subsidiaries in any way.
-            All logos are property of their
-            respective owners. <br><br>Copyright &copy; 2022 Josh Gallant<br><br>
-           
-            <script language="Javascript">
-                document.write("This page was last modified on: " + document.lastModified + "");
-            </script>
+      <p id="footer-text">
+        This site is not endorsed by nor affiliated with IKEA or any of its
+        parents and/or subsidiaries of any kind.<br />
+        All logos are property of their respective owners. <br /><br />Copyright
+        &copy; 2022 Josh Gallant<br /><br />
 
-        </p>
+        <script language="Javascript">
+          document.write(
+            "This page was last modified on: " + document.lastModified + ""
+          );
+        </script>
+      </p>
     </footer>
-</body>
-
+  </body>
 </html>
