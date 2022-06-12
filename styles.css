@@ -267,13 +267,13 @@ thead tr td{
     transition:
         transform 600ms cubic-bezier(.3, .7, .4, 1);
 }
-@media (hover: hover) {
+@media (min-width:961px) {
 .increment-buttons-pushable:hover {
     filter: brightness(110%);
     -webkit-filter: brightness(110%);
 }
 }
-@media (hover: hover) {
+@media (min-width:961px) {
 .increment-buttons-pushable:hover .increment-buttons-front {
     transform: translateY(-4px);
     transition:
@@ -285,7 +285,7 @@ thead tr td{
     transition: transform 34ms;
 }
 
-@media (hover: hover) {
+@media (min-width:961px) {
 .increment-buttons-pushable:hover .increment-buttons-shadow {
     transform: translateY(4px);
     transition:
