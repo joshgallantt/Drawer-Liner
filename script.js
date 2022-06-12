@@ -10,6 +10,16 @@ $(document).ready(function () {
     $('.calculate').click(calculate);
     // $('.usedCountet').click(usedCountet);
 
+    $('input').bind('keypress', function (e) {
+        return !(e.which != 8 && e.which != 0 &&
+                (e.which < 48 || e.which > 57) && e.which != 46);
+    });
+
+    $('.incrementor input').click(function () {
+        $(this).select();
+    });
+
+
 });
 
 function calculate() {
