@@ -119,7 +119,7 @@ thead tr td{
     border: 1px solid lightgray;
     margin: 0.7rem;
     max-width: 60px;
-    touch-action: none;
+    user-select: all;
 }
 
 
