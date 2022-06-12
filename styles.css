@@ -3,17 +3,23 @@
 *::after {
     box-sizing: border-box;
     text-align: center;
-    margin: 0;
+    margin: 0px;
     font-family: Arial, Helvetica, sans-serif;
-    border: 0;
-}
+    touch-action: manipulation;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    /* border: 1px solid green; */
 
+}
 
 /* Chrome, Safari, Edge, Opera */
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
     -webkit-appearance: none;
-    margin: 0;
 }
 
 /* Firefox */
@@ -21,154 +27,276 @@ input[type=number] {
     -moz-appearance: textfield;
 }
 
-.center {
-    margin-left: auto;
-    margin-right: auto;
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
 }
 
-img {
-    max-width: 150px;
-    vertical-align: middle;
-    margin: 1rem;
-    padding-top: 1rem;
+body {
+    background-color: white;
 }
-body{
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    touch-action: manipulation;
-}
+
 header {
     background-color: darkblue;
     color: whitesmoke;
     font-size: 1.4rem;
-    text-align: center;
+    padding: 1rem;
 }
+
+.header img {
+    max-width: 12rem;
+    vertical-align: middle;
+    padding: 1rem;
+}
+
 
 h1 {
     font-size: 1.8rem;
-    margin-bottom: 1.7rem;
+    padding: 0.5rem;
 }
 
-h3{
+h3 {
     font-size: 1.5rem;
-    padding: 1rem;
 }
 
 footer {
     background-color: darkblue;
     color: whitesmoke;
-    margin-top: 2rem;
     font-size: 1.2rem;
-    padding: 1rem;
 }
 
-.container {
-    background-color: whitesmoke;
-}
 
 #intro {
-    font-size: 22px;
-    padding: 2.3rem;
+    padding: 1rem;
+    font-size: 1.2rem;
+    background-color: white;
 }
 
-.add-button, .sub-button {
+table {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100;
+    padding: 0.5rem;
+    padding-right: 1.8rem;
+}
+
+table td {
+    font-weight: bold;
+}
+
+thead tr td h3{
+    font-weight: bold;
+    font-size: 1.4rem;
+    padding: 10px;
+}
+
+/* text column */
+.table-size-label {
     font-size: 1.5rem;
-    height: 4rem;
-    width: 4rem;
-    border-radius: 50%;
-    border: 0;
-    margin: 1rem;
-    color: #1565c0;
 }
 
+/* incrementor table row elements */
 .incrementor {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.incrementor input{
+/* input number field */
+.incrementor input {
     font-size: 18px;
     padding: 8px;
-    border-radius: 3px;
+    border-radius: 10px;
     height: 4rem;
     width: 5rem;
     font-size: 1.5rem;
     border: 1px solid lightgray;
-    background-color: cornsilk;
+    margin: 0.7rem;
 }
 
-table{
-    margin-bottom: 1rem;
-    padding: 10px;
-}
 
-thead tr td{
-    font-weight: bold;
-}
-
-.size-label{
-    font-size: 1.5rem;
-}
-
+/* Removes standard ui toggle buttons */
 .radio-toolbar input[type="radio"] {
     opacity: 0;
     position: fixed;
     width: 0;
-  }
-  
-  .radio-toolbar label {
-      display: inline-block;
-      background-color: #e9e9ed;
-      padding: 20px 40px;
-      font-family: sans-serif, Arial;
-      font-size: 1.3rem;
-      border-radius: 40rem;
-      margin: 5px;
-      max-width: 16rem;
-      color: slategray;
-  }
-  
-  .radio-toolbar label:hover {
-      background-color: #d0d0d7;
-  }
-  
-  .radio-toolbar input[type="radio"]:checked + label {
-      background-color: darkblue;
-      border-color: darkblue;
-      color: whitesmoke;
-  }
+}
 
-  .calculate {
+/* radio buttons unchecked */
+.radio-toolbar label {
+    display: inline-block;
+    background-color: #e9e9ed;
+    padding: 20px 40px;
+    font-family: sans-serif, Arial;
+    font-size: 1.3rem;
+    border-radius: 40rem;
+    color: slategray;
+}
+
+/* radio buttons on hover */
+.radio-toolbar label:hover {
+    background-color: #d0d0d7;
+}
+
+/* radio buttons on chosen */
+.radio-toolbar input[type="radio"]:checked+label {
+    background-color: darkblue;
+    color: whitesmoke;
+}
+
+/* calculate button */
+.calculate {
     display: inline-block;
     background-color: green;
     padding: 20px 40px;
     font-family: sans-serif, Arial;
     font-size: 1.3rem;
     border-radius: 10px;
-    margin: 5px;
-    margin-top: 3rem;
     max-width: 16rem;
     color: white;
-  }
+    border: 0px;
 
-  .calculate:hover {
+}
+
+/* calculate button on hover */
+.calculate:hover {
     background-color: darkgreen
-  }
+}
 
-  .reset {
+/* reset button */
+.reset {
     display: inline-block;
     background-color: red;
     color: white;
+    border: 0px;
     padding: 20px 40px;
     font-family: sans-serif, Arial;
     font-size: 1.3rem;
     border-radius: 10px;
-    margin: 5px;
     max-width: 16rem;
-  }
-  .reset:hover {
-    background-color:darkred;
-  }
+}
 
+/* reset button on hover */
+.reset:hover {
+    background-color: darkred;
+}
+
+
+.green-front {
+    background: hsl(120deg 100% 47%);
+}
+
+.red-front {
+    background: hsl(345deg 100% 47%);
+}
+
+.green-edge {
+    background: linear-gradient(to left,
+            hsl(120deg 100% 16%) 0%,
+            hsl(120deg 100% 32%) 8%,
+            hsl(120deg 100% 32%) 92%,
+            hsl(120deg 100% 16%) 100%);
+}
+
+.red-edge {
+    background: linear-gradient(to left,
+            hsl(340deg 100% 16%) 0%,
+            hsl(340deg 100% 32%) 8%,
+            hsl(340deg 100% 32%) 92%,
+            hsl(340deg 100% 16%) 100%);
+}
+
+.increment-buttons-pushable {
+    position: relative;
+    border: none;
+    background: transparent;
+    padding: 0;
+    cursor: pointer;
+    outline-offset: 2px;
+    transition: filter 250ms;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+.increment-buttons-shadow {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 12px;
+    background: hsl(0deg 0% 0% / 0.25);
+    will-change: transform;
+    transform: translateY(2px);
+    transition:
+        transform 600ms cubic-bezier(.3, .7, .4, 1);
+}
+
+.increment-buttons-edge {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 12px;
+
+}
+
+.increment-buttons-front {
+    display: block;
+    position: relative;
+    border-radius: 12px;
+    width: 3.2rem;
+    height: 2.2rem;
+    font-size: 2rem;
+    text-align: center; 
+    line-height: 2rem;
+    font-family: monospace;
+    font-weight: bold;
+    color: white;
+    will-change: transform;
+    transform: translateY(-4px);
+    transition:
+        transform 600ms cubic-bezier(.3, .7, .4, 1);
+}
+
+/* @media (min-width: 768px) {
+    .increment-buttons-front {
+        font-size: 1.25rem;
+        padding: 12px 42px;
+    }
+} */
+
+.increment-buttons-pushable:hover {
+    filter: brightness(110%);
+    -webkit-filter: brightness(110%);
+}
+
+.increment-buttons-pushable:hover .increment-buttons-front {
+    transform: translateY(-4px);
+    transition:
+        transform 250ms cubic-bezier(.3, .7, .4, 1.5);
+}
+
+.increment-buttons-pushable:active .increment-buttons-front {
+    transform: translateY(-2px);
+    transition: transform 34ms;
+}
+
+.increment-buttons-pushable:hover .increment-buttons-shadow {
+    transform: translateY(4px);
+    transition:
+        transform 250ms cubic-bezier(.3, .7, .4, 1.5);
+}
+
+.increment-buttons-pushable:active .increment-buttons-shadow {
+    transform: translateY(1px);
+    transition: transform 34ms;
+}
+
+.increment-buttons-pushable:focus:not(:focus-visible) {
+    outline: none;
+}
