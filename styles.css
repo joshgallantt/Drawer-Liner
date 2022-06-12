@@ -12,7 +12,7 @@
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
-    /* border: 1px solid green; */
+    text-align: center;
 
 }
 
@@ -69,7 +69,7 @@ footer {
 
 
 #intro {
-    padding: 1rem;
+    padding: 1.5rem;
     font-size: 1.2rem;
     background-color: white;
 }
@@ -77,19 +77,29 @@ footer {
 table {
     margin-left: auto;
     margin-right: auto;
-    width: 100;
-    padding: 0.5rem;
-    padding-right: 1.8rem;
+    width: 40px;
+    padding: 1rem;
+    border-spacing: 0;
+    border-collapse: collapse;
+    border-style: hidden;
 }
 
 table td {
     font-weight: bold;
+    border: 1px solid lightgray;
+    padding: 0.4rem;
+    
+}
+
+thead tr td{
+    border-bottom: 1px solid black;
+    
 }
 
 thead tr td h3{
     font-weight: bold;
     font-size: 1.4rem;
-    padding: 10px;
+    padding: 0.5rem;
 }
 
 /* text column */
@@ -102,15 +112,15 @@ thead tr td h3{
     display: flex;
     align-items: center;
     justify-content: center;
+    padding-left: 0.3rem;
+
 }
 
 /* input number field */
 .incrementor input {
     font-size: 18px;
-    padding: 8px;
     border-radius: 10px;
-    height: 4rem;
-    width: 5rem;
+    padding: 0.8rem 0.2rem;
     font-size: 1.5rem;
     border: 1px solid lightgray;
     margin: 0.7rem;
@@ -154,16 +164,12 @@ thead tr td h3{
     font-family: sans-serif, Arial;
     font-size: 1.3rem;
     border-radius: 10px;
-    max-width: 16rem;
+    width: 100px;
     color: white;
     border: 0px;
 
 }
 
-/* calculate button on hover */
-.calculate:hover {
-    background-color: darkgreen
-}
 
 /* reset button */
 .reset {
@@ -172,16 +178,11 @@ thead tr td h3{
     color: white;
     border: 0px;
     padding: 20px 40px;
-    font-family: sans-serif, Arial;
     font-size: 1.3rem;
     border-radius: 10px;
     max-width: 16rem;
 }
 
-/* reset button on hover */
-.reset:hover {
-    background-color: darkred;
-}
 
 
 .green-front {
@@ -249,8 +250,7 @@ thead tr td h3{
     display: block;
     position: relative;
     border-radius: 12px;
-    width: 3.2rem;
-    height: 2.2rem;
+    padding: 0.4rem 1rem;
     font-size: 2rem;
     text-align: center; 
     line-height: 2rem;
@@ -262,13 +262,6 @@ thead tr td h3{
     transition:
         transform 600ms cubic-bezier(.3, .7, .4, 1);
 }
-
-/* @media (min-width: 768px) {
-    .increment-buttons-front {
-        font-size: 1.25rem;
-        padding: 12px 42px;
-    }
-} */
 
 .increment-buttons-pushable:hover {
     filter: brightness(110%);
