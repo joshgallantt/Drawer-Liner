@@ -210,8 +210,8 @@ thead tr td {
     display: inline-block;
     font-size: 18px;
     border-radius: 0.5rem;
-    min-width: 3rem;
-    min-height: 3rem;
+    width: 3rem;
+    height: 3rem;
     font-size: 2rem;
     font-family: monospace;
     font-weight: bold;
@@ -231,8 +231,8 @@ thead tr td {
 .button:active {
     top: 3px;
     margin: 0.11rem;
-    min-width: 2.8rem;
-    min-height: 2.8rem;
+    width: 2.8rem;
+    height: 2.8rem;
     font-size: 1.8rem;
     filter: brightness(0.8);
     box-shadow: none;
