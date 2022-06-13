@@ -130,7 +130,7 @@ function calculate() {
       const element = cutsList[i][j];
       $(".diagram").append(
         '<div class="segment" style="width: ' +
-          Math.floor((element / chosenMaterial) * 100) +
+          (element / chosenMaterial) * 100 +
           '%;">' +
           element +
           "&quot;  " +
