@@ -102,32 +102,7 @@ thead tr td {
 }
 
 /* incrementor table row elements */
-.incrementor {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
 
-/* input number field */
-.incrementor input {
-  font-size: 18px;
-  border-radius: 10px;
-  padding: 0.6rem 0rem;
-  font-size: 1.5rem;
-  border: 1px solid lightgray;
-  margin: 0.7rem;
-  max-width: 60px;
-  user-select: all;
-  /* supported by Chrome and Opera */
-  -webkit-user-select: text;
-  /* Safari */
-  -khtml-user-select: text;
-  /* Konqueror HTML */
-  -moz-user-select: text;
-  /* Firefox */
-  -ms-user-select: text;
-  /* Internet Explorer/Edge */
-}
 
 /* Removes standard ui toggle buttons */
 .radio-toolbar input[type="radio"] {
@@ -182,6 +157,33 @@ input[type="radio"] {
   background-color: #ff3333;
 }
 
+.incrementor {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+/* input number field */
+.incrementor input {
+  font-size: 18px;
+  border-radius: 10px;
+  padding: 1rem 0rem;
+  margin: 0.5rem;
+  font-size: 1.5rem;
+  border: 1px solid lightgray;
+  max-width: 60px;
+  user-select: all;
+  /* supported by Chrome and Opera */
+  -webkit-user-select: text;
+  /* Safari */
+  -khtml-user-select: text;
+  /* Konqueror HTML */
+  -moz-user-select: text;
+  /* Firefox */
+  -ms-user-select: text;
+  /* Internet Explorer/Edge */
+}
+
 .button {
   display: inline-block;
   font-size: 18px;
@@ -208,12 +210,12 @@ input[type="radio"] {
 
 .button:active {
   top: 3px;
-  margin: 0.11rem;
   width: 2.8rem;
   height: 2.8rem;
   font-size: 1.8rem;
   filter: brightness(0.8);
   box-shadow: none;
+  margin: 0.1rem;
 }
 
 .control-button {
@@ -253,7 +255,7 @@ input[type="radio"] {
 footer {
   background-color: darkblue;
   color: whitesmoke;
-  font-size: 0.8rem;
+  font-size: 1rem;
   margin-top: 2rem;
   padding: 1.5rem;
 }
@@ -273,7 +275,7 @@ footer {
   background-color: lightgrey;
   border: 1px dashed black;
   display: inline-block;
-  margin-top: 1rem;
+  margin-top: 2rem;
   padding: 0.1rem;
   font-size: 0.8rem;
 }

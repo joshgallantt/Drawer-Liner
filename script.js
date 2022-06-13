@@ -126,25 +126,26 @@ function calculate() {
   for (let i = 0; i < cutsList.length; i++) {
     let cutsUsed = 0;
     const element = cutsList[i];
+    let widthUsed = 0;
     for (let j = 0; j < cutsList[i].length; j++) {
       const element = cutsList[i][j];
+      var curWidth = Math.floor((element / chosenMaterial) * 100);
       $(".diagram").append(
         '<div class="segment" style="width: ' +
-          (element / chosenMaterial) * 100 +
+          curWidth +
           '%;">' +
           element +
           "&quot;  " +
           "</div>"
       );
       cutsUsed += element;
+      widthUsed += curWidth;
     }
-    if (
-      cutsUsed != chosenMaterial &&
-      Math.floor(((chosenMaterial - cutsUsed) / chosenMaterial) * 100) > 0
-    ) {
+    if (cutsUsed != chosenMaterial && chosenMaterial - cutsUsed > 0) {
+      console.log(curWidth);
       $(".diagram").append(
         '<div class="segment" style="background-color: whitesmoke; width: ' +
-          Math.floor(((chosenMaterial - cutsUsed) / chosenMaterial) * 100) +
+          (100 - widthUsed) +
           '%;">' +
           "&nbsp" +
           "</div>"
@@ -152,5 +153,5 @@ function calculate() {
     }
     $(".diagram").append(`<br>`);
   }
-  $(".diagram").append(`<br><h3>Pieces Needed: ${usedCount}</h3>`)
+  $(".diagram").append(`<br><h3>Pieces Needed: ${usedCount}</h3>`);
 }
