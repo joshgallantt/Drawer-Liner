@@ -1,4 +1,5 @@
 $(document).ready(function () {
+
   $(".add-button").click(function () {
     $(this)
       .prev()
@@ -29,7 +30,24 @@ $(document).ready(function () {
   $(".reset").click(function () {
     $(".drawer").val("0");
     $("#diagram").empty();
+    $("#needed").remove();
+    if ($(window).width() > 767) {
+      $(".diagram").append('<h3 id="diagramHeader">Cutting Diagram:</h3>');
+   }
   });
+
+  $(window).resize(function() {
+    console.log($("#diagramHeader").siblings().length)
+    if ($(window).width() < 767 && $("#diagramHeader").siblings().length === 0) {
+      $("#diagram").empty();
+    }
+    if ($(window).width() > 767 && $('#diagram').is(':empty')) {
+      $(".diagram").append('<h3 id="diagramHeader">Cutting Diagram:</h3>');
+    }
+  });
+
+
+
 });
 
 function calculate() {
@@ -120,8 +138,8 @@ function calculate() {
       usedCount++;
     }
   }
-
-  $(".diagram").append("<h3>Cutting Diagram:<h3>");
+  $("#diagram").empty();
+  $("#diagram").append('<h3 id="diagramHeader">Cutting Diagram:</h3>');
 
   for (let i = 0; i < cutsList.length; i++) {
     let cutsUsed = 0;
@@ -130,7 +148,7 @@ function calculate() {
     for (let j = 0; j < cutsList[i].length; j++) {
       const element = cutsList[i][j];
       var curWidth = Math.floor((element / chosenMaterial) * 100);
-      $(".diagram").append(
+      $("#diagram").append(
         '<div class="segment" style="width: ' +
           curWidth +
           '%;">' +
@@ -141,9 +159,9 @@ function calculate() {
       cutsUsed += element;
       widthUsed += curWidth;
     }
+    
     if (cutsUsed != chosenMaterial && chosenMaterial - cutsUsed > 0) {
-      console.log(curWidth);
-      $(".diagram").append(
+      $("#diagram").append(
         '<div class="segment" style="background-color: whitesmoke; width: ' +
           (100 - widthUsed) +
           '%;">' +
@@ -151,7 +169,12 @@ function calculate() {
           "</div>"
       );
     }
-    $(".diagram").append(`<br>`);
+    $("#diagram").append(`<br>`);
   }
-  $(".diagram").append(`<br><h3>Pieces Needed: ${usedCount}</h3>`);
+  if ($(".pieces").length) {
+    $("#needed").remove();
+    $(".pieces").append(`<div id="needed"><h3">Product Needed: ${usedCount}</h3></div>`);
+  } else {
+    $(".pieces").append(`<div id="needed"><h3">Product Needed: ${usedCount}</h3></div>`);
+  }
 }
